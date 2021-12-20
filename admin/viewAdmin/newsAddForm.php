@@ -3,14 +3,14 @@
 <div class="container" style="min-height:400px;">
 <div class="col-md-11">
 
- <h2>News Add </h2>
+ <h2>Clothes Add </h2>
  <?php
  if(isset($test)){
      if($test==true)
         {
 ?>
     <div class="alert alert-info">
-        <strong>Запись добавлена. </strong><a href="newsAdmin"> Список новостей</a>
+        <strong>Entry added. </strong><a href="newsAdmin"> Clothes List</a>
     </div>
     <?php
         }
@@ -18,7 +18,7 @@
     {
      ?>
         <div class="alert alert-warning">
-            <strong>Ошибка добавления записи!</strong> <a href="newsAdmin"> Список новостей</a>
+            <strong>Error adding record!</strong> <a href="newsAdmin"> Clothes List</a>
         </div>
     <?php
         }
@@ -28,11 +28,11 @@ else{
 <form method='POST' action="newsAddResult" enctype="multipart/form-data">
     <table class='table table-bordered'>
         <tr>
-            <td>News title</td>
+            <td>Clothes title</td>
             <td><input type='text' name='title' class='form-control' required></td>
         </tr>
         <tr>
-            <td>News text</td>
+            <td>Description</td>
             <td><textarea rows="5" name="text" class='form-control' required> </textarea></td>
         </tr>
         <tr>
@@ -59,10 +59,10 @@ else{
         <tr>
             <td colspan="2">
                 <button type="submit" class="btn btn-primary" name="save">
-                    <span class="qlyphicon qlyphicon-plus"></span> Сохранить
+                    <span class="qlyphicon qlyphicon-plus"></span> Save
                 </button>
                 <a href="newsAdmin" class="btn btn-large btn-success">
-                <i class="qlyphycon qlyphicon-backward"></i> &nbsp;Назад к списку</a>
+                <i class="qlyphycon qlyphicon-backward"></i> &nbsp;To the List</a>
             </td>
         </tr>
     </table>

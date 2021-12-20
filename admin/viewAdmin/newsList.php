@@ -1,16 +1,16 @@
 <?php ob_start() ?>
 
-<h2>News List </h2>
+<h2>Clothing List </h2>
 
 <div class="container" style="min-height:400px;">
     <div style="margin:20px;">
-        <a class="btn btn-primary" href="newsAdd" role="button">Добавить новость</a>
+        <a class="btn btn-primary" href="newsAdd" role="button">Add clothes</a>
     </div>
     <div class="col-md-11">
         <table class='table table-bordered table-responsive'>
             <tr>
                 <th width="10%">ID</th>
-                <th width="70%">Header News</th>
+                <th width="70%">Header Clothes</th>
                 <th width="20%"></th>
             </tr>
         <?php

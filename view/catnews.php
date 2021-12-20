@@ -1,7 +1,7 @@
 <?php
 ob_start();
 ?>
-<h1>News (categoryes)</h1>
+<h1>Clothes (categories)</h1>
 <br>
 
 <?php

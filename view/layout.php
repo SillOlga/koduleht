@@ -13,7 +13,7 @@
 
 <nav class="one">
     <ul class="topmenu">
-    <li><a href="#">Categoryes<i class="fa fa-angle-down"></i></a>
+    <li><a href="#">Categories<i class="fa fa-angle-down"></i></a>
         <ul class="submenu">
         <?php
               Controller::AllCategory();

@@ -2,14 +2,14 @@
 
 <div class="container" style="min-height:400px;">
 <div class="col-md-11">
- <h2>News Delete </h2>
+ <h2>Clothes Delete </h2>
  <?php
  if(isset($test)){
      if($test==true)
         {
 ?>
     <div class="alert alert-info">
-        <strong>Запись удалена. </strong><a href="newsAdmin"> Список новостей</a>
+        <strong>Entry deleted. </strong><a href="newsAdmin"> Clothes List</a>
     </div>
     <?php
         }
@@ -17,7 +17,7 @@
     {
      ?>
         <div class="alert alert-warning">
-            <strong>Ошибка удаления записи!</strong> <a href="newsAdmin"> Список новостей</a>
+            <strong>Record deletion error!</strong> <a href="newsAdmin"> Clothes List</a>
         </div>
     <?php
         }
@@ -28,12 +28,12 @@ else{
 "multipart/form-data">
     <table class='table table-bordered'>
         <tr>
-            <td>News title</td>
+            <td>Clothes title</td>
             <td><input type='text' name='title' class='form-control' required value=<?php
             echo $detail['title']; ?> readonly></td>
         </tr>
         <tr>
-            <td>News text</td>
+            <td>Description</td>
             <td><textarea rows="5" name="text" class='form-control' required readonly ><?php
             echo $detail['text']; ?></textarea></td>    
         </tr>
@@ -64,10 +64,10 @@ else{
         <tr>     
             <td colspan="2">
                 <button type="submit" class="btn btn-primary" name="save">
-                    <span class="qlyphicon qlyphicon-plus"></span> Удалить
+                    <span class="qlyphicon qlyphicon-plus"></span> Delete
                 </button>
                 <a href="newsAdmin" class="btn btn-large btn-success">
-                <i class="qlyphycon qlyphicon-backward"></i> &nbsp;Назад к списку</a>
+                <i class="qlyphycon qlyphicon-backward"></i> &nbsp;To list</a>
             </td>
         </tr>
     </table>

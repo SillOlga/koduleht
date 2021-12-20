@@ -1,7 +1,7 @@
 <?php
 ob_start();
 ?>
-<h1>All categoryes </h1>
+<h1>All categories </h1>
 <br>
 
 <?php

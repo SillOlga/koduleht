@@ -11,7 +11,7 @@ class controllerAdmin {
             include_once('viewAdmin/startAdmin.php');
         }
         else{
-            $_SESSION['errorString']='Неправильное имя пользователя или пароль';
+            $_SESSION['errorString']='Wrong username or password';
             include_once('viewAdmin/formLogin.php');
         }
     }
