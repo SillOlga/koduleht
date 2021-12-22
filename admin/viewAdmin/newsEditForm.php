@@ -74,7 +74,7 @@ else{
                     <span class="qlyphicon qlyphicon-plus"></span> Change
                 </button>
                 <a href="newsAdmin" class="btn btn-large btn-success">
-                <i class="qlyphycon qlyphicon-backward"></i> &nbsp;To List</a>
+                <i class="qlyphycon qlyphicon-backward"></i> &nbsp;To the List</a>
             </td>
         </tr>
     </table>

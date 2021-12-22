@@ -4,11 +4,14 @@ class ViewNews {
 
     public static function NewsByCategory($arr) {
         foreach ($arr as $value) {
+            echo '<div class="col">';
             echo '<img src="data:image/jpeg;base64,' . base64_encode($value['picture']) . '" width=150 /><br>';
             echo "<h2 >" . $value['title'] . "<h2>";
             Controller::CommentsCount($value['id']);
             echo "<a href='news?id=" . $value['id'] . "'>Next</a><br>";
+            echo '</div>';
         }
+        
     }
 
     public static function AllNews($arr) {
@@ -17,6 +20,7 @@ class ViewNews {
             Controller::CommentsCount($value['id']);
             echo "<a href='news?id=".$value['id']."'>Next</a></li><br>";
         }
+        
     }
 
     public static function ReadNews($n) {
@@ -25,6 +29,7 @@ class ViewNews {
         echo '<br><img src="data:image/jpeg;base64,'.base64_encode( $n['picture']) . '" width=150 /><br>';
         echo "<p>".$n['text']."<p>";
     }
+    
 
 }//end class
 
