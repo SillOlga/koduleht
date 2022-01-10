@@ -30,8 +30,11 @@ class Controller {
     public static function error404() {
         include_once 'view/error404.php';
     }
-
-        public static function InsertComment($c, $id) {
+    public static function info() {
+        include_once 'view/info.php';
+    }
+    
+    public static function InsertComment($c, $id) {
         Comments::InsertComment($c, $id);
         //self::NewsByID($id);
         header ('Location:news?id='.$id.'#ctable');

@@ -45,12 +45,16 @@ elseif ($path == 'newsDelResult' && isset($_GET['id'])) {
     $response=controllerAdminNews::newsDeleteResult($_GET['id']);
 
 }
+elseif ($path == 'info') {
+    $response=Controller::info();
 
-//error page
-
-    else{
-            $response = Controller::error404();
-    }
+}else{
+    $response = Controller::error404();
+}
+?>
+    
+            
+    
 
 
 

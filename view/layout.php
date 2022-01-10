@@ -20,7 +20,7 @@
         ?>
       </ul>
     </li>
-    <li><a href="iwww">About</a></li>
+    <li><a href="info">About</a></li>
     <li><a href="./">Startpage</a></li>
     <li><a href="registerForm">Register </a></li>
     <div class="pull-right">
