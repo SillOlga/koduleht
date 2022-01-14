@@ -16,7 +16,7 @@ class News {
         return $arr;
     }
 
-    public static function getNewsByCategoryID($id) {
+    public static function getItemsByCategoryID($id) {
         $query = "SELECT * FROM items where category_id=" . (string) $id . " ORDER BY id DESC";
         $db = new Database();
         $arr = $db->getAll($query);

@@ -17,8 +17,8 @@ class Controller {
         include_once 'view/allnews.php';
     }
 
-    public static function NewsByCatID($id) {
-        $arr = News::getNewsByCategoryID($id);
+    public static function ItemsByCatID($id) {
+        $arr = News::getItemsByCategoryID($id);
         include_once 'view/catnews.php';
     }
 
