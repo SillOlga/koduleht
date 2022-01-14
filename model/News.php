@@ -23,7 +23,7 @@ class News {
         return $arr;
     }
 
-    public static function getNewsByID($id) {
+    public static function getItemsByID($id) {
         $query = "SELECT * FROM items where id=" . (string) $id;
         $db = new Database();
         $n = $db->getOne($query);

@@ -16,7 +16,7 @@
         $response = Controller::ItemsByCatID($_GET['id']);
     }
     elseif($path == 'news' and isset($_GET['id'])) {
-        $response = Controller::NewsByID($_GET['id']);
+        $response = Controller::ItemsByID($_GET['id']);
     }
 
     elseif ($path == 'insertcomment' and isset($_GET['comment'], $_GET['id']))
