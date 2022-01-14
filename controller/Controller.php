@@ -3,7 +3,7 @@
 class Controller {
 
     public static function StartSite() {
-        $arr = News::getLast10News();
+        $arr = News::getLast10Items();
         include_once 'view/start.php';
     }
 
