@@ -9,7 +9,7 @@ class Comments{
         return $q;
     }
 
-    public static function getCommentByNewsID($id) {
+    public static function getCommentByItemsID($id) {
         $query = "SELECT * FROM comments where news_id=". (string)$id ." ORDER BY id DESC";
         $db = new Database();
         $arr = $db->getAll($query);

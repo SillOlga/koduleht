@@ -41,7 +41,7 @@ class Controller {
     }
 // список комментариев
     public static function Comments($newsid)    {
-        $arr = Comments::getCommentByNewsID($newsid);
+        $arr = Comments::getCommentByItemsID($newsid);
         ViewComments::CommentsByNews($arr);
 
     }
