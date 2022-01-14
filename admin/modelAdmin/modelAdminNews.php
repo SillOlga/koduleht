@@ -2,7 +2,7 @@
 class modelAdminNews{
 
 
-    public static function getNewsList() {
+    public static function getItemsList() {
         $query = "SELECT items.*, category.name,users.username from items,
         category, users WHERE items.category_id=category.id AND
         items.user_id=users.id ORDER BY `items`.`id` DESC";

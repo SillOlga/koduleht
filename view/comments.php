@@ -8,7 +8,7 @@ class ViewComments{
     <input type="submit" value="Send"> </form>';
     }
 
-public static function CommentsByNews($arr)
+public static function CommentsByItems($arr)
 {
     if ($arr!= null)   {
     echo '<table id="ctable"><th>Comment</th><th>Date</th>';

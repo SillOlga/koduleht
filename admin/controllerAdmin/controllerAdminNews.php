@@ -2,9 +2,9 @@
 class controllerAdminNews{
 
     //list News
-    public static function NewsList(){
+    public static function ItemsList(){
 
-        $arr=modelAdminNews::getNewsList();
+        $arr=modelAdminNews::getItemsList();
         include_once 'viewAdmin/newsList.php';
         }
     //---------------------------------------add

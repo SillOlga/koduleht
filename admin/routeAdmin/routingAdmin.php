@@ -21,7 +21,7 @@ elseif ($path == 'logout'){
 
     //-------------------------------------------listNews
 elseif($path=='newsAdmin'){
-    $response=controllerAdminNews::NewsList();
+    $response=controllerAdminNews::ItemsList();
 
 }
 //-------------------------------add news

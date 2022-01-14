@@ -42,7 +42,7 @@ class Controller {
 // список комментариев
     public static function Comments($newsid)    {
         $arr = Comments::getCommentByItemsID($newsid);
-        ViewComments::CommentsByNews($arr);
+        ViewComments::CommentsByItems($arr);
 
     }
 // количество комментариев к новости
