@@ -10,7 +10,7 @@
     }
 
     elseif($path == 'all') {
-        $response = Controller::AllNews();
+        $response = Controller::AllItems();
     }
     elseif($path == 'category' and isset($_GET['id'])) {
         $response = Controller::NewsByCatID($_GET['id']);

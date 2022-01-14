@@ -12,8 +12,8 @@ class Controller {
         include_once 'view/category.php';
     }
 
-    public static function AllNews() {
-        $arr = News::getAllNews();
+    public static function AllItems() {
+        $arr = News::getAllItems();
         include_once 'view/allnews.php';
     }
 

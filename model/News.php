@@ -9,7 +9,7 @@ class News {
         return $arr;
     }
 
-    public static function getAllNews() {
+    public static function getAllItems() {
         $query = "SELECT * FROM items ORDER BY id DESC";
         $db = new Database();
         $arr = $db->getAll($query);
