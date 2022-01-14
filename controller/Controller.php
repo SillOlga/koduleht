@@ -47,13 +47,13 @@ class Controller {
     }
 // количество комментариев к новости
     public static function CommentsCount($newsid)    {
-        $arr = Comments::getCommentsCountByNewsID($newsid);
+        $arr = Comments::getCommentsCountByItemsID($newsid);
         ViewComments::CommentsCount($arr);
 
     }
 // ссылка - переход к списку комментариев
     public static function CommentsCountWithAncor($newsid)    {
-        $arr = Comments::getCommentsCountByNewsID($newsid);
+        $arr = Comments::getCommentsCountByItemsID($newsid);
         ViewComments::CommentsCountWithAncor($arr);
     }
 //--------------------------------------------РЕГИСТРАЦИЯ
