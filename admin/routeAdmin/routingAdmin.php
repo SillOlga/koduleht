@@ -24,13 +24,13 @@ elseif($path=='newsAdmin'){
     $response=controllerAdminNews::ItemsList();
 
 }
-//-------------------------------add news
+//-------------------------------add items
     elseif($path=='newsAdd'){
-        $response=controllerAdminNews::newsAddForm();
+        $response=controllerAdminNews::itemsAddForm();
 
     }    
     elseif($path == 'newsAddResult') {
-    $response = controllerAdminNews::newsAddResult();
+    $response = controllerAdminNews::itemsAddResult();
 }
 //------------------------------------edit news
     elseif($path == 'newsEdit' && isset($_GET['id'])) {

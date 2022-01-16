@@ -1,22 +1,22 @@
 <?php
 class controllerAdminNews{
 
-    //list News
+    //list Items
     public static function ItemsList(){
 
         $arr=modelAdminNews::getItemsList();
         include_once 'viewAdmin/newsList.php';
         }
     //---------------------------------------add
-    public static function newsAddForm()
+    public static function itemsAddForm()
     {
         $arr = modelAdminCategory::getCategoryList();
         include_once('viewAdmin/newsAddForm.php');
     } 
     
-    public static function newsAddResult()
+    public static function itemsAddResult()
     {
-        $test = modelAdminNews::getNewsAdd();
+        $test = modelAdminNews::getItemsAdd();
         include_once('viewAdmin/newsAddForm.php');
     }
     //-------------------------------------edit

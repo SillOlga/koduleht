@@ -13,7 +13,7 @@ class modelAdminNews{
 
 
     //----------------------------------Add
-    public static function getNewsAdd() {
+    public static function getItemsAdd() {
         $test=false;
         if(isset($_POST['save'])){
             if(isset($_POST['title']) && isset($_POST['text']) && isset($_POST['idCategory']) ){
