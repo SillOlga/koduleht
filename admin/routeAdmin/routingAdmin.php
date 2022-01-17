@@ -40,13 +40,13 @@ elseif($path=='newsAdmin'){
 elseif($path == 'newsEditResult' && isset($_GET['id'])) {
     $response = controllerAdminNews::itemsEditResult($_GET['id']);
 }
-//----------------------------------delete news
+//----------------------------------delete items
 elseif($path == 'newsDel' && isset($_GET['id'])) {
-    $response = controllerAdminNews::newsDeleteForm($_GET['id']);
+    $response = controllerAdminNews::itemsDeleteForm($_GET['id']);
 
 }
 elseif($path == 'newsDelResult' && isset($_GET['id'])) {
-$response = controllerAdminNews::newsDeleteResult($_GET['id']);
+$response = controllerAdminNews::itemsDeleteResult($_GET['id']);
 }
 
     else{

@@ -33,16 +33,16 @@ class controllerAdminNews{
         include_once('viewAdmin/newsEditForm.php');
     }
     //-------------------------------------delete
-    public static function newsDeleteForm($id)
+    public static function itemsDeleteForm($id)
     {
         $arr = modelAdminCategory::getCategoryList();
         $detail=modelAdminNews::getItemsDetail($id);
         include_once('viewAdmin/newsDeleteForm.php');
     }
 
-    public static function newsDeleteResult($id)
+    public static function itemsDeleteResult($id)
     {
-        $test = modelAdminNews::getNewsDelete($id);
+        $test = modelAdminNews::getItemsDelete($id);
         include_once('viewAdmin/newsDeleteForm.php');
     }    
 

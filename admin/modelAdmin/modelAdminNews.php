@@ -84,12 +84,12 @@ class modelAdminNews{
         }
         return $test;
     }
-    //------------------------------------news delete
-    public static function getNewsDelete($id) {
+    //------------------------------------items delete
+    public static function getItemsDelete($id) {
         $test=false;
         if(isset($_POST['save']))    {
             $sql="DELETE FROM `items` WHERE `items`.`id` = ".$id;
-            $db = new Database();
+             $db = new Database();
                     $item = $db->executeRun($sql);
                 if($item==true){
                     $test=true;
