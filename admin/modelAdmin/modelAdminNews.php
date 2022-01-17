@@ -36,8 +36,8 @@ class modelAdminNews{
         }
         return $test;
     }
-    //------------------------------------news detail id
-            public static function getNewsDetail($id) {
+    //------------------------------------items detailid
+            public static function getItemsDetail($id) {
         $query = "SELECT items.*, category.name,users.username from items, category, users
         WHERE items.category_id=category.id AND items.user_id=users.id and items.id=".$id;
         $db = new Database();
@@ -45,8 +45,8 @@ class modelAdminNews{
         return $arr;
 
     }
-    //------------------------------------news edit
-    public static function getNewsEdit($id) {
+    //------------------------------------items edit
+    public static function getItemsEdit($id) {
         $test=false;
         if(isset($_POST['save'])){
             if(isset($_POST['title']) && isset($_POST['text']) && isset($_POST['idCategory'

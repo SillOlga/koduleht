@@ -38,7 +38,7 @@ elseif($path=='newsAdmin'){
 
 }
 elseif($path == 'newsEditResult' && isset($_GET['id'])) {
-    $response = controllerAdminNews::newsEditResult($_GET['id']);
+    $response = controllerAdminNews::itemsEditResult($_GET['id']);
 }
 //----------------------------------delete news
 elseif($path == 'newsDel' && isset($_GET['id'])) {

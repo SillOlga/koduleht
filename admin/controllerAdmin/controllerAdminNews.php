@@ -23,20 +23,20 @@ class controllerAdminNews{
     public static function itemsEditForm($id)
     {
         $arr = modelAdminCategory::getCategoryList();
-        $detail=modelAdminNews::getNewsDetail($id);
+        $detail=modelAdminNews::getItemsDetail($id);
         include_once('viewAdmin/newsEditForm.php');
     }
 
-    public static function newsEditResult($id)
+    public static function itemsEditResult($id)
     {
-        $test = modelAdminNews::getNewsEdit($id);
+        $test = modelAdminNews::getItemsEdit($id);
         include_once('viewAdmin/newsEditForm.php');
     }
     //-------------------------------------delete
     public static function newsDeleteForm($id)
     {
         $arr = modelAdminCategory::getCategoryList();
-        $detail=modelAdminNews::getNewsDetail($id);
+        $detail=modelAdminNews::getItemsDetail($id);
         include_once('viewAdmin/newsDeleteForm.php');
     }
 
