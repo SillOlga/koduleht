@@ -32,9 +32,9 @@ elseif($path=='newsAdmin'){
     elseif($path == 'newsAddResult') {
     $response = controllerAdminNews::itemsAddResult();
 }
-//------------------------------------edit news
+//------------------------------------edit items
     elseif($path == 'newsEdit' && isset($_GET['id'])) {
-        $response = controllerAdminNews::newsEditForm($_GET['id']);
+        $response = controllerAdminNews::itemsEditForm($_GET['id']);
 
 }
 elseif($path == 'newsEditResult' && isset($_GET['id'])) {

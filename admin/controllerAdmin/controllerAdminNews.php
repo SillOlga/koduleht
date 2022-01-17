@@ -20,7 +20,7 @@ class controllerAdminNews{
         include_once('viewAdmin/newsAddForm.php');
     }
     //-------------------------------------edit
-    public static function newsEditForm($id)
+    public static function itemsEditForm($id)
     {
         $arr = modelAdminCategory::getCategoryList();
         $detail=modelAdminNews::getNewsDetail($id);
