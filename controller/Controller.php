@@ -3,7 +3,7 @@
 class Controller {
 
     public static function StartSite() {
-        $arr = News::getLast10Items();
+        $arr = Items::getLast10Items();
         include_once 'view/start.php';
     }
 
@@ -13,17 +13,17 @@ class Controller {
     }
 
     public static function AllItems() {
-        $arr = News::getAllItems();
+        $arr = Items::getAllItems();
         include_once 'view/allnews.php';
     }
 
     public static function ItemsByCatID($id) {
-        $arr = News::getItemsByCategoryID($id);
+        $arr = Items::getItemsByCategoryID($id);
         include_once 'view/catnews.php';
     }
 
     public static function ItemsByID($id)   {
-        $n = News::getItemsByID($id);
+        $n = Items::getItemsByID($id);
         include_once 'view/readnews.php';
     }
 

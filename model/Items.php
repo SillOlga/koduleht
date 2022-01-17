@@ -1,6 +1,6 @@
 <?php
 
-class News {
+class Items {
 
     public static function getLast10Items() {
         $query = "SELECT * FROM items ORDER BY id DESC LIMIT 3";

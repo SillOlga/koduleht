@@ -2,7 +2,7 @@
 session_start();
 include_once 'inc/Database.php';
 require 'model/Category.php';
-require 'model/News.php';
+require 'model/Items.php';
 require 'model/Comments.php';
 require 'model/Register.php';
 
