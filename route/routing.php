@@ -19,6 +19,10 @@
         $response = Controller::ItemsByID($_GET['id']);
     }
 
+    elseif($path == 'search' and isset($_GET['search'])) {
+        $response = Controller::SearchItems($_GET['search']);
+    }
+
     elseif ($path == 'insertcomment' and isset($_GET['comment'], $_GET['id']))
     {
         $response = Controller::InsertComment($_GET['comment'], $_GET['id']);
@@ -38,11 +42,11 @@ elseif ($path == 'registerAnswer' )
 
 //--------------------------delete news
 elseif ($path =='newsDel' && isset($_GET['id'])){
-    $response=controllerAdminNews::newsDeleteForm($_GET['id']);
+    $response=controllerAdminItems::itemsDeleteForm($_GET['id']);
 
 }
 elseif ($path == 'newsDelResult' && isset($_GET['id'])) {
-    $response=controllerAdminNews::newsDeleteResult($_GET['id']);
+    $response=controllerAdminItems::itemsDeleteResult($_GET['id']);
 
 }
 elseif ($path == 'info') {

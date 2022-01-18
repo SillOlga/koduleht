@@ -27,6 +27,12 @@ class Controller {
         include_once 'view/readnews.php';
     }
 
+    public static function SearchItems($search)
+    {
+        $arr = Items::getSearchItems($search);
+        include_once 'view/searchview.php';
+    }
+
     public static function error404() {
         include_once 'view/error404.php';
     }

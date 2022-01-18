@@ -30,5 +30,12 @@ class Items {
         return $n;
     }
 
+    public static function getSearchItems($s) {
+        $query = 'SELECT * FROM items where title like "%'.$s. '%" or text like "%'.$s. '%"'  ;
+        $db = new Database();
+        $n = $db->getAll($query);
+        return $n;
+    }
+
 }
 ?>

@@ -1,5 +1,5 @@
 <?php
-class modelAdminNews{
+class modelAdminItems{
 
 
     public static function getItemsList() {

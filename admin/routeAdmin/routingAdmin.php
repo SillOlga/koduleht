@@ -19,34 +19,34 @@ elseif ($path == 'logout'){
     $response = controllerAdmin::logoutAction();
 }
 
-    //-------------------------------------------listNews
+    //-------------------------------------------listItems
 elseif($path=='newsAdmin'){
-    $response=controllerAdminNews::ItemsList();
+    $response=controllerAdminItems::ItemsList();
 
 }
 //-------------------------------add items
     elseif($path=='newsAdd'){
-        $response=controllerAdminNews::itemsAddForm();
+        $response=controllerAdminItems::itemsAddForm();
 
     }    
     elseif($path == 'newsAddResult') {
-    $response = controllerAdminNews::itemsAddResult();
+    $response = controllerAdminItems::itemsAddResult();
 }
 //------------------------------------edit items
     elseif($path == 'newsEdit' && isset($_GET['id'])) {
-        $response = controllerAdminNews::itemsEditForm($_GET['id']);
+        $response = controllerAdminItems::itemsEditForm($_GET['id']);
 
 }
 elseif($path == 'newsEditResult' && isset($_GET['id'])) {
-    $response = controllerAdminNews::itemsEditResult($_GET['id']);
+    $response = controllerAdminItems::itemsEditResult($_GET['id']);
 }
 //----------------------------------delete items
 elseif($path == 'newsDel' && isset($_GET['id'])) {
-    $response = controllerAdminNews::itemsDeleteForm($_GET['id']);
+    $response = controllerAdminItems::itemsDeleteForm($_GET['id']);
 
 }
 elseif($path == 'newsDelResult' && isset($_GET['id'])) {
-$response = controllerAdminNews::itemsDeleteResult($_GET['id']);
+$response = controllerAdminItems::itemsDeleteResult($_GET['id']);
 }
 
     else{

@@ -1,10 +1,10 @@
 <?php
-class controllerAdminNews{
+class controllerAdminItems{
 
     //list Items
     public static function ItemsList(){
 
-        $arr=modelAdminNews::getItemsList();
+        $arr=modelAdminItems::getItemsList();
         include_once 'viewAdmin/newsList.php';
         }
     //---------------------------------------add
@@ -16,33 +16,33 @@ class controllerAdminNews{
     
     public static function itemsAddResult()
     {
-        $test = modelAdminNews::getItemsAdd();
+        $test = modelAdminItems::getItemsAdd();
         include_once('viewAdmin/newsAddForm.php');
     }
     //-------------------------------------edit
     public static function itemsEditForm($id)
     {
         $arr = modelAdminCategory::getCategoryList();
-        $detail=modelAdminNews::getItemsDetail($id);
+        $detail=modelAdminItems::getItemsDetail($id);
         include_once('viewAdmin/newsEditForm.php');
     }
 
     public static function itemsEditResult($id)
     {
-        $test = modelAdminNews::getItemsEdit($id);
+        $test = modelAdminItems::getItemsEdit($id);
         include_once('viewAdmin/newsEditForm.php');
     }
     //-------------------------------------delete
     public static function itemsDeleteForm($id)
     {
         $arr = modelAdminCategory::getCategoryList();
-        $detail=modelAdminNews::getItemsDetail($id);
+        $detail=modelAdminItems::getItemsDetail($id);
         include_once('viewAdmin/newsDeleteForm.php');
     }
 
     public static function itemsDeleteResult($id)
     {
-        $test = modelAdminNews::getItemsDelete($id);
+        $test = modelAdminItems::getItemsDelete($id);
         include_once('viewAdmin/newsDeleteForm.php');
     }    
 
