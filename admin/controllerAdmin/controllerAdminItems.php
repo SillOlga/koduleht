@@ -5,7 +5,7 @@ class controllerAdminItems{
     public static function ItemsList(){
 
         $arr=modelAdminItems::getItemsList();
-        include_once 'viewAdmin/newsList.php';
+        include_once 'viewAdmin/itemsList.php';
         }
     //---------------------------------------add
     public static function itemsAddForm()
