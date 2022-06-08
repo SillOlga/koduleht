@@ -31,7 +31,7 @@
           echo '<h4><a href="../" target=_blank>Web site FASHION </a>';
           echo ' &#187 <a href="./" >Start admin</a>';
           echo ' &#187 <a href="categoryAdmin">Clothes categories</a>';
-          echo ' &#187 <a href="newsAdmin">Clothes List</a>';
+          echo ' &#187 <a href="itemsAdmin">Clothes List</a>';
           echo '</h4>';
         }else{
               echo '<h4>You have no rights!</h4>';
@@ -50,7 +50,7 @@
             <?php echo $content; ?>
     </div>
     <footer class="footer">
-        <p>&copy; 2021 Design <i class="fa fa-child"></i></p>
+        <p>&copy; 2022 Design <i class="fa fa-child"></i></p>
     </footer>
     </div> <!-- /container -->
 </body>

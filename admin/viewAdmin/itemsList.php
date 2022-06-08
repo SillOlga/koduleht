@@ -4,7 +4,7 @@
 
 <div class="container" style="min-height:400px;">
     <div style="margin:20px;">
-        <a class="btn btn-primary" href="newsAdd" role="button">Add clothes</a>
+        <a class="btn btn-primary" href="itemsAdd" role="button">Add clothes</a>
     </div>
     <div class="col-md-11">
         <table class='table table-bordered table-responsive'>
@@ -21,13 +21,13 @@
             echo '<td>'.$row['id'].'</td>  ';
 
             echo '<td><b>Title:</b> '.$row['title'].'<br>';
-            echo '<b>Kатегория: </b><i>'.$row['name'].'</i>';
+            echo '<b>Category: </b><i>'.$row['name'].'</i>';
             echo '<br><b>Author: </b><i>'.$row['username'].'</i>';
             echo '</td>';
             echo '<td>
-            <a href="newsEdit?id='.$row['id'].'">Edit <span class="qlyphicon
+            <a href="itemsEdit?id='.$row['id'].'">Edit <span class="qlyphicon
             qlyphicon-edit" aria-hidden="true"></span></a>
-            <a href="newsDel?id='.$row['id'].'">Delete <span class="qlyphicon
+            <a href="itemsDel?id='.$row['id'].'">Delete <span class="qlyphicon
             qlyphicon-remove" aria-hidden="true"></span></a>
             </td>   ';
 

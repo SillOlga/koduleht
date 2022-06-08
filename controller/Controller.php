@@ -14,17 +14,17 @@ class Controller {
 
     public static function AllItems() {
         $arr = Items::getAllItems();
-        include_once 'view/allnews.php';
+        include_once 'view/allitems.php';
     }
 
     public static function ItemsByCatID($id) {
         $arr = Items::getItemsByCategoryID($id);
-        include_once 'view/catnews.php';
+        include_once 'view/catitems.php';
     }
 
     public static function ItemsByID($id)   {
         $n = Items::getItemsByID($id);
-        include_once 'view/readnews.php';
+        include_once 'view/readitems.php';
     }
 
     public static function SearchItems($search)
@@ -42,24 +42,24 @@ class Controller {
     
     public static function InsertComment($c, $id) {
         Comments::InsertComment($c, $id);
-        //self::NewsByID($id);
-        header ('Location:news?id='.$id.'#ctable');
+        //self::ItemsByID($id);
+        header ('Location:items?id='.$id.'#ctable');
     }
 // список комментариев
-    public static function Comments($newsid)    {
-        $arr = Comments::getCommentByItemsID($newsid);
+    public static function Comments($itemsid)    {
+        $arr = Comments::getCommentByItemsID($itemsid);
         ViewComments::CommentsByItems($arr);
 
     }
 // количество комментариев к новости
-    public static function CommentsCount($newsid)    {
-        $arr = Comments::getCommentsCountByItemsID($newsid);
+    public static function CommentsCount($itemsid)    {
+        $arr = Comments::getCommentsCountByItemsID($itemsid);
         ViewComments::CommentsCount($arr);
 
     }
 // ссылка - переход к списку комментариев
-    public static function CommentsCountWithAncor($newsid)    {
-        $arr = Comments::getCommentsCountByItemsID($newsid);
+    public static function CommentsCountWithAncor($itemsid)    {
+        $arr = Comments::getCommentsCountByItemsID($itemsid);
         ViewComments::CommentsCountWithAncor($arr);
     }
 //--------------------------------------------РЕГИСТРАЦИЯ

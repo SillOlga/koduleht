@@ -1,11 +1,11 @@
 <?php
 ob_start();
 ?>
-<h1>Clothes (categories)</h1>
+<h1>All categories </h1>
 <br>
 
 <?php
-ViewNews::NewsByCategory($arr);
+ViewItems::AllItems($arr);
 $content = ob_get_clean();
 include_once 'view/layout.php';
 

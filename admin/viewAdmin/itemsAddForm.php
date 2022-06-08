@@ -10,7 +10,7 @@
         {
 ?>
     <div class="alert alert-info">
-        <strong>Entry added. </strong><a href="newsAdmin"> Clothes List</a>
+        <strong>Entry added. </strong><a href="itemsAdmin"> Clothes List</a>
     </div>
     <?php
         }
@@ -18,14 +18,14 @@
     {
      ?>
         <div class="alert alert-warning">
-            <strong>Error adding record!</strong> <a href="newsAdmin"> Clothes List</a>
+            <strong>Error adding record!</strong> <a href="itemsAdmin"> Clothes List</a>
         </div>
     <?php
         }
 }
 else{
     ?>
-<form method='POST' action="newsAddResult" enctype="multipart/form-data">
+<form method='POST' action="itemsAddResult" enctype="multipart/form-data">
     <table class='table table-bordered'>
         <tr>
             <td>Clothes title</td>
@@ -61,7 +61,7 @@ else{
                 <button type="submit" class="btn btn-primary" name="save">
                     <span class="qlyphicon qlyphicon-plus"></span> Save
                 </button>
-                <a href="newsAdmin" class="btn btn-large btn-success">
+                <a href="itemsAdmin" class="btn btn-large btn-success">
                 <i class="qlyphycon qlyphicon-backward"></i> &nbsp;To the List</a>
             </td>
         </tr>

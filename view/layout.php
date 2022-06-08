@@ -51,7 +51,7 @@
 
 
         <hr>
-        <p style="display:block; text-align:center;">FASHION 2021 &copy</p>
+        <p style="display:block; text-align:center;">FASHION 2022 &copy</p>
     </body>
 
 </html>

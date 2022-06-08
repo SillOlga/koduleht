@@ -6,7 +6,7 @@ require 'model/Items.php';
 require 'model/Comments.php';
 require 'model/Register.php';
 
-include_once 'view/news.php';
+include_once 'view/items.php';
 include_once 'view/comments.php';
 
 include_once 'controller/Controller.php';

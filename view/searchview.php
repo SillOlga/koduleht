@@ -4,7 +4,7 @@ ob_start();
 echo "<h1>Search result:</h1>";
 echo "<h2><b>". $_GET['search'].":</b></h2>";
 
- ViewNews::AllNews($arr);
+ ViewItems::AllItems($arr);
  $content = ob_get_clean();
  include_once 'view/layout.php';
 

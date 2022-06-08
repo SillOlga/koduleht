@@ -4,7 +4,7 @@ ob_start();
 <h1>TOP NEW </h1>
  <br>
  <?php
- ViewNews::NewsByCategory($arr);
+ ViewItems::ItemsByCategory($arr);
 
  $content = ob_get_clean();
 

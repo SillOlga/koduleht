@@ -3,7 +3,7 @@ ob_start();
 ?>
 <br>
 <?php
-ViewNews::ReadNews($n);
+ViewItems::ReadItems($n);
 
 echo "<br>";
 Controller::Comments($_GET['id']);

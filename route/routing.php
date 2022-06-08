@@ -15,7 +15,7 @@
     elseif($path == 'category' and isset($_GET['id'])) {
         $response = Controller::ItemsByCatID($_GET['id']);
     }
-    elseif($path == 'news' and isset($_GET['id'])) {
+    elseif($path == 'items' and isset($_GET['id'])) {
         $response = Controller::ItemsByID($_GET['id']);
     }
 
@@ -40,12 +40,12 @@ elseif ($path == 'registerAnswer' )
     $response = Controller::registerUser();
 }
 
-//--------------------------delete news
-elseif ($path =='newsDel' && isset($_GET['id'])){
+//--------------------------delete items
+elseif ($path =='itemsDel' && isset($_GET['id'])){
     $response=controllerAdminItems::itemsDeleteForm($_GET['id']);
 
 }
-elseif ($path == 'newsDelResult' && isset($_GET['id'])) {
+elseif ($path == 'itemsDelResult' && isset($_GET['id'])) {
     $response=controllerAdminItems::itemsDeleteResult($_GET['id']);
 
 }

@@ -20,32 +20,32 @@ elseif ($path == 'logout'){
 }
 
     //-------------------------------------------listItems
-elseif($path=='newsAdmin'){
+elseif($path=='itemsAdmin'){
     $response=controllerAdminItems::ItemsList();
 
 }
 //-------------------------------add items
-    elseif($path=='newsAdd'){
+    elseif($path=='itemsAdd'){
         $response=controllerAdminItems::itemsAddForm();
 
     }    
-    elseif($path == 'newsAddResult') {
+    elseif($path == 'itemsAddResult') {
     $response = controllerAdminItems::itemsAddResult();
 }
 //------------------------------------edit items
-    elseif($path == 'newsEdit' && isset($_GET['id'])) {
+    elseif($path == 'itemsEdit' && isset($_GET['id'])) {
         $response = controllerAdminItems::itemsEditForm($_GET['id']);
 
 }
-elseif($path == 'newsEditResult' && isset($_GET['id'])) {
+elseif($path == 'itemsEditResult' && isset($_GET['id'])) {
     $response = controllerAdminItems::itemsEditResult($_GET['id']);
 }
 //----------------------------------delete items
-elseif($path == 'newsDel' && isset($_GET['id'])) {
+elseif($path == 'itemsDel' && isset($_GET['id'])) {
     $response = controllerAdminItems::itemsDeleteForm($_GET['id']);
 
 }
-elseif($path == 'newsDelResult' && isset($_GET['id'])) {
+elseif($path == 'itemsDelResult' && isset($_GET['id'])) {
 $response = controllerAdminItems::itemsDeleteResult($_GET['id']);
 }
 
